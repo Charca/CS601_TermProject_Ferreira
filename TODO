@@ -1,0 +1,19 @@
+Pages:
+[] Home
+[] About
+[] Blog
+[] Article
+[] Projects
+[] Contact
+
+Checklist:
+[] Install webfonts
+[] Vue component (maybe a gallery)
+[] A form
+[] ES6 functionality
+[] Use Flexbox or CSS Grid
+[] Hit an API
+[] Validate HTML and CSS
+[] README
+[] Publish to GH and Netlify
+[] Record video presentation
