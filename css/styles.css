@@ -239,6 +239,13 @@ td {
 .logo img {
   display: block;
   width: 75px;
+  height: 75px;
+}
+
+@media (max-width: 580px) {
+  .logo {
+    display: none;
+  }
 }
 
 /* MAIN NAV */
@@ -278,7 +285,7 @@ td {
 }
 
 .main-nav a:hover::before,
-.selected::before {
+.main-nav .selected::before {
   transform: scaleX(1);
 }
 
@@ -329,6 +336,22 @@ td {
   border-radius: 50%;
 }
 
+.side-image {
+  float: right;
+  margin: 0 20px 20px 20px;
+}
+
+.side-image img {
+  border-radius: 5px;
+}
+
+figcaption {
+  max-width: 300px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 @media (max-width: 1200px) {
   .home-container p {
     font-size: 1.2em;
@@ -348,5 +371,14 @@ td {
     flex: 0;
     padding-bottom: 2em;
     text-align: center;
+  }
+
+  .side-image {
+    float: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
   }
 }
