@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Contact - Maxi Ferreira</title>
+
+    <!-- <script src="https://unpkg.com/vue@next"></script>
+    <script defer src="main.js"></script> -->
+    <script src="./js/contact.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="main-header">
+        <a class="logo" href="./index.html">
+          <img alt="Maxi Ferreira Logo" src='./images/logo.svg'>
+        </a>
+
+        <nav class="main-nav">
+          <a href="./index.html">home</a>
+          <a href="./about.html">about</a>
+          <a href="./blog.html">blog</a>
+          <a href="./projects.html">projects</a>
+          <a class="selected" href="./contact.html">contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="container">
+          <h1>Contact</h1>
+          <figure class="side-image">
+            <img
+              class="mobile-full-width"
+              src="./images/los-angeles.jpg"
+              alt="A photo of a street with the Hollywood sign in the background"
+              width="300"
+            />
+            <figcaption>
+              Photo by Jake Blucker on
+              <a href="https://unsplash.com/photos/8LlJNFLTEm0" target="_blank"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+          <p>
+            Here is how you can find me online. The best way to reach me is using the contact form below or at my
+            email address, but feel free to get in touch using any other method.
+          </p>
+          <p>
+            As I mentioned in my <a href="about.html">About</a> page, I currently
+            live in Los Angeles, California. If you're ever in the area and want to
+            grab a coffee, just let me know!
+          </p>
+
+          <table id="contact-methods">
+            <thead>
+              <tr>
+                <th>Email</th>
+                <th>Twitter</th>
+                <th>GitHub</th>
+                <th>LinkedIn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="mailto:charca@bu.edu">charca@bu.edu</a>
+                </td>
+                <td>
+                  <a href="https://www.twitter.com/charca" target="_blank"
+                    >@charca</a
+                  >
+                </td>
+                <td>
+                  <a href="https://www.github.com/charca" target="_blank">charca</a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/in/charca" target="_blank"
+                    >charca</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Contact Me</h2>
+
+          <form method="post" name="contact" data-netlify="true" id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Your name" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="your@email.com" />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required placeholder="Your message"></textarea>
+            <button class="primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="main-footer">
+        <span>
+          &copy; 2021 Maxi Ferreira.
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
+

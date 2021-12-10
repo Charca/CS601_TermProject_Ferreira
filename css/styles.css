@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  margin: 1.6em 0 0 0;
+  margin: 1.6em 0 0.5em 0;
   font-size: 1.8em;
 }
 
@@ -171,6 +171,53 @@ th {
 
 td {
   padding: 0.4em 0.8em;
+}
+
+form {
+  font-size: 1.2em;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  font-size: .9em;
+  padding: 10px;
+  font-family: var(--font-family-serif);
+  margin-bottom: 18px;
+}
+
+textarea {
+  height: 200px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1em;
+  font-family: var(--font-family-sans);
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  color: #FFF;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+#contact-methods {
+  width: 100%;
+  text-align: center;
+}
+
+#contact-methods td {
+  width: 25%;
 }
 
 .container {
