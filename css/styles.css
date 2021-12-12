@@ -210,6 +210,9 @@ button.primary {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
 
 #contact-methods {
   width: 100%;
@@ -397,6 +400,22 @@ figcaption {
   text-align: center;
   font-size: 14px;
   margin-top: 10px;
+}
+
+.alert {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.alert-success {
+  background: #ebfbee;
+  border: 1px solid #51cf66;
+}
+
+.alert-error {
+  background: #fbeaea;
+  border: 1px solid #ff5252;
 }
 
 @media (max-width: 1200px) {
