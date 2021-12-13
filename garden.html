@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>The Garden - Maxi Ferreira</title>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script defer src="./js/garden.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="main-header">
+        <a class="logo" href="./index.html">
+          <img alt="Maxi Ferreira Logo" src='./images/logo.svg'>
+        </a>
+
+        <nav class="main-nav">
+          <a href="./index.html">home</a>
+          <a href="./about.html">about</a>
+          <a href="./garden.html" class="selected">the garden</a>
+          <a href="./contact.html">contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="about-container container">
+          <h1>The Garden</h1>
+          <p>Welcome to the garden. Here you'll find a collection of essays, notes, projects, and presentations that I've worked on over the years.</p>
+          <p>Unlike a traditional blog, my digital garden contains work at different stages of development. Nothing is set in stone, and everything is a work-in-progress.</p>
+          <p>Learn more about digital gardens, in <a href="https://maggieappleton.com/garden-history" target="_blank">this fantastic essay</a> by Maggie Appleton.</p>
+          <div id="app">
+            <div class="tags">
+              <p>Filter by type:</p>
+              <button class="tag" v-for="tag in tags"
+                :class="{ selected: tag.selected }"
+                @click="selectTag(tag)"
+              >
+                {{ tag.name }}
+              </button>
+            </div>
+            <div class="gallery">
+              <a v-for="item in getItems()" :href="item.url" class="gallery-item" :target="item.external ? '_blank' : '_self'">
+                <img v-if="item.image" :src="item.image" :alt="item.title">
+                <h2>
+                  {{item.title}}
+                  <img class="external-link" v-if="item.external" src="./images/external.svg" alt="External link">
+                </h2>
+                <p>Published {{item.published}} <span class="tag">{{item.tag}}</span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="main-footer">
+        <span>
+          &copy; 2021 Maxi Ferreira.
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
+

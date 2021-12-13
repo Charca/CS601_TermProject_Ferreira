@@ -418,6 +418,76 @@ figcaption {
   border: 1px solid #ff5252;
 }
 
+.gallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 40px -100px;
+}
+
+.gallery-item {
+  border-radius: 6px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  color: var(--text-main);
+  transform: scale(1.05);
+}
+
+.gallery-item p {
+  margin: 0 20px;
+}
+
+.gallery-item h2 {
+  margin: 20px 20px 10px;
+}
+
+.external-link {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.tag {
+  background: var(--primary-color);
+  font-family: var(--font-family-sans);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 600;
+  padding: 3px 10px;
+  text-transform: uppercase;
+}
+
+.tags {
+  margin-top: 40px;
+}
+
+.tags p {
+  font-family: var(--font-family-sans);
+  margin-bottom: 10px;
+}
+
+.tags .tag {
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-size: .8em;
+  padding: 6px 10px;
+}
+
+.tag.selected {
+  background: var(--primary-color);
+  color: white;
+}
+
 @media (max-width: 1200px) {
   .home-container p {
     font-size: 1.2em;
@@ -425,6 +495,13 @@ figcaption {
 
   .home-container img {
     max-width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    margin: 20px 0;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
