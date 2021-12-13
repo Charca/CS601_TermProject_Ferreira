@@ -488,6 +488,26 @@ figcaption {
   color: white;
 }
 
+.article-header {
+  text-align: center;
+}
+
+.article-header h1 {
+  margin-bottom: 0.7em;
+}
+
+.article-header p {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-family: var(--font-family-sans);
+  font-weight: 600;
+}
+
+.article-header hr {
+  min-width: 100px;
+  width: 30%;
+}
+
 @media (max-width: 1200px) {
   .home-container p {
     font-size: 1.2em;

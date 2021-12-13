@@ -1,8 +1,8 @@
 Pages:
 [x] Home
 [x] About
-[] Garden
-[] Notes
+[x] Garden
+[x] Notes
 [x] Contact
 
 Checklist:
@@ -17,7 +17,6 @@ Checklist:
 [] README
 [] Publish to GH and Netlify
 [] Record video presentation
-
 
 Things to go in the garden:
 

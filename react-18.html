@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>React 18 useTransition Hook - Maxi Ferreira</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="main-header">
+        <a class="logo" href="./index.html">
+          <img alt="Maxi Ferreira Logo" src='./images/logo.svg'>
+        </a>
+
+        <nav class="main-nav">
+          <a href="./index.html">home</a>
+          <a href="./about.html">about</a>
+          <a href="./garden.html" class="selected">the garden</a>
+          <a href="./contact.html">contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <header class="article-header">
+          <p>December 8, 2021</p>
+          <h1>React 18 useTransition Hook</h1>
+          <hr />
+        </header>
+        <div class="container">
+          <article class="content">
+            <p>
+              The <code>startTransition</code> function is one of the new APIs in React 18 that
+              is also one of the new concurrent features (remember, there's no concurrent mode
+              anymore, only concurrent features).
+            </p>
+            <p>
+              <code>startTransition</code> lets us define a state update (useState, useReducer,
+              this.setState) as a "transition", which means a non-urgent update.
+            </p>
+            <p>
+              In React 18, there are two types of state updates:
+            </p>
+            <ul>
+              <li>Urgent updates: the default type, reflects a direct user interaction like typing or clicking.</li>
+              <li>Transition updates: a non-urgent update which transitions the UI from one state to the next like updating a list of results based on a filter value. These have lower priority and so their rendering can be interrupted.</li>
+            </ul>
+            <img src="./images/react-transitions.jpeg" alt="React 18 Transitions">
+            <h2>startTransition vs useTransition</h2>
+            <p>
+              There is also a <code>useTransition</code> hook which returns a <code>startTransition</code> instance.
+              They work very similarly but <code>useTransition</code> returns a flag that reflects if the
+              transition is pending. This can be used as a "loading flag".
+            </p>
+            <p>
+              As a rule of thumb, if you care about the value of `isPending` and you're using it
+              in a React component, use the `useTransition` hook, otherwise, stick to `startTransition`.
+            </p>
+          </article>
+        </div>
+      </main>
+
+      <footer class="main-footer">
+        <span>
+          &copy; 2021 Maxi Ferreira.
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
+
