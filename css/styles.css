@@ -508,6 +508,12 @@ figcaption {
   width: 30%;
 }
 
+article iframe {
+  width: 100%;
+  height: 380px;
+  border: 0;
+}
+
 @media (max-width: 1200px) {
   .home-container p {
     font-size: 1.2em;
