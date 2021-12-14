@@ -12,7 +12,7 @@ Checklist:
 [x] Use Flexbox or CSS Grid - Both actually
 [x] Hit an API (kinda)
 [x] Update Home copy
-[] Install webfonts
+[x] Install webfonts
 [] Validate HTML and CSS
 [] README
 [] Publish to GH and Netlify
